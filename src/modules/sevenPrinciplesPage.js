@@ -1,6 +1,4 @@
 import React from 'react';
-import Home from './home';
-import ChangePage from './changePage';
 import SevenPrinciples from './sevenPrinciples';
 class SevenPrinciplesPage extends React.Component {
     render() {
