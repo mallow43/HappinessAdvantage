@@ -13,7 +13,7 @@ class FUlcrum extends React.Component {
                         <h3>THE FULCRUM AND THE LEVER</h3>
                     </div>
                 </Responsive>
-                <div className="ui grid">
+                <div className="ui container grid">
                     <div className="twelve wide computer sixteen wide column">
                         <p>
                             We can’t change reality but we can use our brain to change how we process it. What we

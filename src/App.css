@@ -79,7 +79,7 @@ div.header {
     right: 0;
     /* padding: 40px; */
     width: 100vw;
-    height: 23vh;
+    height: 20vh;
     text-align: center;
     color: white;
 }
@@ -105,14 +105,22 @@ div.fp-tableCell {
 div.main {
     margin-top: 7vw;
 }
-#fulcrumIMG {
-    height: 50vh;
+.ui.image {
     border-radius: 3px;
 }
+#fulcrumIMG {
+    height: 50vh;
+}
+
 p {
     font-size: 1.5em;
     line-height: 2;
     color: rgb(109, 115, 116);
+}
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 1.25em;
+    }
 }
 #forwards {
     position: absolute;
@@ -125,12 +133,36 @@ p {
 }
 #slides h3 {
     padding-top: 20px;
-    font-size: 2.5em;
+    font-size: 2.75em;
 }
 #slides p {
+    padding-top: 10px;
     font-size: 1.25em;
 }
 .button {
     z-index: 2;
     opacity: 0.5;
+}
+#content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#semiFooter {
+    background-color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 50vh;
+    color: #eab543;
+    width: 100vw;
+    height: 20vh;
+    text-align: center;
+}
+#tall {
+    margin-top: 20vh;
+    height: 80vh;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { List, Responsive } from 'semantic-ui-react';
-
+let span = <span></span>;
 class HappinessAdvantage extends React.Component {
     render() {
         return (
@@ -14,7 +14,7 @@ class HappinessAdvantage extends React.Component {
                     </div>
                 </Responsive>
 
-                <div className="ui grid stackable">
+                <div className="ui grid container stackable">
                     <div className="nine wide computer sixteen wide column">
                         <p>
                             The Happiness advantage is the idea that with a positive mindset you will perform better

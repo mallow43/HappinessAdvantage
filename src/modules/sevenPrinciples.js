@@ -57,10 +57,14 @@ class SevenPrinciples extends React.Component {
                     <Button icon id="backwards" onClick={this.forward}>
                         <Icon name="arrow right" />
                     </Button>
-                    <Responsive minWidth={768}>
-                        <div className="ui container">{principles[this.state.num]}</div>
-                    </Responsive>
-                    <Responsive maxWidth={768}>{principles[this.state.num]}</Responsive>
+                    <div id="content">
+                        <Responsive minWidth={768}>
+                            {/* <div className="ui container">{principles[this.state.num]}</div> */}
+                        </Responsive>
+                        {/* <Responsive maxWidth={768}> */}
+                        {principles[this.state.num]}
+                        {/* </Responsive> */}
+                    </div>
                 </div>
             </div>
         );
