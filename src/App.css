@@ -78,12 +78,14 @@ div.header {
     left: 0;
     right: 0;
     /* padding: 40px; */
-    width: 300vw;
+    width: 100vw;
     height: 23vh;
     text-align: center;
     color: white;
 }
-
+.inline {
+    display: inline;
+}
 #sevenHeader {
     position: absolute;
     color: white;
@@ -127,4 +129,8 @@ p {
 }
 #slides p {
     font-size: 1.25em;
+}
+.button {
+    z-index: 2;
+    opacity: 0.5;
 }

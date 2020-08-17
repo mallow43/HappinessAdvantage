@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Icon, Transition } from 'semantic-ui-react';
+import { Button, Icon, Transition, Responsive } from 'semantic-ui-react';
 import HappinessAdvantage from './principles/happinessAdvantage';
 import TetrisEffect from './principles/tetrisEffect';
 import Fulcrum from './principles/fulcrum';
@@ -44,9 +44,12 @@ class SevenPrinciples extends React.Component {
     render() {
         return (
             <div>
-                <div className="header">
-                    <h3 id="sevenHeader">THE SEVEN PRINCIPLES</h3>
-                </div>
+                <Responsive minWidth={768}>
+                    <div className="header">
+                        <h3 id="sevenHeader">THE SEVEN PRINCIPLES</h3>
+                    </div>
+                </Responsive>
+
                 <div id="slides">
                     <Button icon id="forwards" onClick={this.backwards}>
                         <Icon name="arrow left" />
@@ -54,12 +57,10 @@ class SevenPrinciples extends React.Component {
                     <Button icon id="backwards" onClick={this.forward}>
                         <Icon name="arrow right" />
                     </Button>
-
-                    <div className="ui container">
-                        <Transition animation="fade" duration={1000}>
-                            {principles[this.state.num]}
-                        </Transition>
-                    </div>
+                    <Responsive minWidth={768}>
+                        <div className="ui container">{principles[this.state.num]}</div>
+                    </Responsive>
+                    <Responsive maxWidth={768}>{principles[this.state.num]}</Responsive>
                 </div>
             </div>
         );

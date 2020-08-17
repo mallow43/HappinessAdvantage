@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'semantic-ui-react';
+import { Image, Responsive } from 'semantic-ui-react';
 class ChangePage extends React.Component {
     render() {
         return (
@@ -23,9 +23,13 @@ class ChangePage extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="footer">
-                    <h5>Happiness is not the belief that we dont need to change; it is the realization that we can.</h5>
-                </div>
+                <Responsive minWidth={768}>
+                    <div className="footer">
+                        <h5>
+                            Happiness is not the belief that we dont need to change; it is the realization that we can.
+                        </h5>
+                    </div>
+                </Responsive>
             </div>
         );
     }

@@ -1,9 +1,17 @@
 import React from 'react';
-
+import { Responsive } from 'semantic-ui-react';
 class FallingUp extends React.Component {
     render() {
         return (
             <div>
+                <Responsive minWidth={768}>
+                    <h3>THE HAPPINESS ADVANTAGE</h3>
+                </Responsive>
+                <Responsive maxWidth={768}>
+                    <div className="header">
+                        <h3>THE HAPPINESS ADVANTAGE</h3>
+                    </div>
+                </Responsive>
                 <h3>Falling Up</h3>
                 <p>
                     Laborum mollit id fugiat dolor incididunt excepteur esse reprehenderit nulla enim consequat. Magna

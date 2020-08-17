@@ -1,24 +1,39 @@
 import React from 'react';
-import { List } from 'semantic-ui-react';
+import { List, Responsive } from 'semantic-ui-react';
+
 class HappinessAdvantage extends React.Component {
     render() {
         return (
             <div>
-                <h3>THE HAPPINESS ADVANTAGE</h3>
+                <Responsive minWidth={768}>
+                    <h3>THE HAPPINESS ADVANTAGE</h3>
+                </Responsive>
+                <Responsive maxWidth={768}>
+                    <div className="header">
+                        <h3>THE HAPPINESS ADVANTAGE</h3>
+                    </div>
+                </Responsive>
+
                 <div className="ui grid stackable">
                     <div className="nine wide computer sixteen wide column">
                         <p>
                             The Happiness advantage is the idea that with a positive mindset you will perform better
                             than with a neutral or negative one. Not only will it increase your performance in the
                             workplace but research shows that unhappy employees will take on average about two more
-                            weeks of sick leave than the average employee. Not to mention that the hormones released by
-                            positive emotions greatly increase brain function. Even if you are not positive by default
-                            it does not take much, even the smallest shots of positivity can give you a competitive
-                            edge. For example in a study doctors were asked to diagnose hypothetical patients doctors
-                            that were primed to be positive were twice as fast at reaching the correct diagnosis. Most
-                            surprisingly is all it took was the promise of a piece of candy. So the next time you are in
-                            a stressful situation just remember that even the smallest things that make you smile can
-                            make all the difference.
+                            weeks of sick leave than the average employee.
+                            <Responsive className="inline" minWidth={992}>
+                                Not to mention that the hormones released by positive emotions greatly increase brain
+                                function.
+                            </Responsive>
+                            Even if you are not positive by default it does not take much, even the smallest shots of
+                            positivity can give you a competitive edge.
+                            <Responsive className="inline" minWidth={992}>
+                                For example in a study doctors were asked to diagnose hypothetical patients doctors that
+                                were primed to be positive were twice as fast at reaching the correct diagnosis. Most
+                                surprisingly is all it took was the promise of a piece of candy.
+                            </Responsive>
+                            So the next time you are in a stressful situation just remember that even the smallest
+                            things that make you smile can make all the difference.
                         </p>
                     </div>
                     <div className="six wide column computer only">
