@@ -43,7 +43,7 @@ class SevenPrinciples extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div id="slidesCont">
                 <Responsive minWidth={768}>
                     <div className="header">
                         <h3 id="sevenHeader">THE SEVEN PRINCIPLES</h3>
