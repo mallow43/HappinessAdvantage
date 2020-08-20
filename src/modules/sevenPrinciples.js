@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Icon, Transition, Responsive } from 'semantic-ui-react';
+import { Button, Icon, Responsive } from 'semantic-ui-react';
 import HappinessAdvantage from './principles/happinessAdvantage';
 import TetrisEffect from './principles/tetrisEffect';
 import Fulcrum from './principles/fulcrum';
